@@ -2,6 +2,7 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import Hero from "@/layout/components/Hero";
 import logos from "@/data/devLogos.json";
 import { Projects } from "@/layout/components/Projects";
+import Testimonial from "@/layout/components/Testimonials/Testimonial";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
             </h2>
           </div>
           <Projects />
+          <Testimonial/>
         </div>
       </div>
     </main>
