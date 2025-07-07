@@ -11,6 +11,12 @@ import TransitionComponent from "./Context/Transition";
 import Layout from "./layout/Layout";
 import { useEffect, useState } from "react";
 import PageLoder from "./layout/components/common/PageLoder";
+import Project3 from "./layout/components/CaseStudies/Project3";
+import Project4 from "./layout/components/CaseStudies/Project4";
+import Project5 from "./layout/components/CaseStudies/Project5";
+import Project6 from "./layout/components/CaseStudies/Project6";
+import Project1 from "./layout/components/CaseStudies/Project1";
+import Project2 from "./layout/components/CaseStudies/Project2";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, useGSAP);
 function App() {
   const [loading, setLoading] = useState(true);
@@ -66,6 +72,12 @@ function App() {
             />
 
             {/* Add more routes here as needed */}
+            <Route path="/case-studies/project1" element={<Project1 />} />
+            <Route path="/case-studies/project2" element={<Project2 />} />
+            <Route path="/case-studies/project3" element={<Project3 />} />
+            <Route path="/case-studies/project4" element={<Project4 />} />
+            <Route path="/case-studies/project5" element={<Project5 />} />
+            <Route path="/case-studies/project6" element={<Project6 />} />
           </Routes>
         </TransitionProvider>
       </Layout>
