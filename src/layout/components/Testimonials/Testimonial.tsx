@@ -1,7 +1,8 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { Star } from "lucide-react";
-import ShinyText from "@/components/reactbits/ShinyText";
+
+
 import { motion } from "framer-motion";
 
 const testimonials = [
@@ -51,7 +52,9 @@ const testimonials = [
     message:
       "Thoroughly impressed with the responsiveness and accessibility built in.",
     image:
-      "https://media.istockphoto.com/id/1309328823/photo/headshot-portrait-of-smiling-male-employee-in-office.webp",
+
+      "https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cHJvZmlsZSUyMHBob3RvfGVufDB8fDB8fHww",
+
   },
   {
     name: "Zara Ali",
@@ -90,10 +93,14 @@ const Testimonial = () => {
   return (
     <div className="py-20 transition-all duration-300 text-amber-50">
       <div className="flex justify-center mb-12">
-        <ShinyText
-          text="What People Are Saying"
-          className="text-4xl md:text-5xl font-orbitron text-center"
-        />
+
+        
+          <h2 className="font-orbitron text-nowrap pl-4 text-4xl lg:text-4xl xl:text-5xl flex justify-center xl:justify-end text-border-white tracking-widest">
+            What People are Saying
+          </h2>
+          
+      
+
       </div>
 
       <div className="overflow-visible py-4 relative z-10">
@@ -108,7 +115,9 @@ const Testimonial = () => {
             <motion.div
               key={idx}
               whileHover="hover"
-              className="relative overflow-hidden mx-4 min-w-[300px] max-w-sm rounded-xl p-10 bg-white/5 backdrop-blur-md border border-white/10 text-white transition-all duration-300 ease-in-out hover:scale-105 hover:border-white hover:shadow-xl hover:z-30"
+
+              className="relative overflow-hidden mx-4 min-w-[300px] max-w-sm rounded-xl p-10 bg-white/5 backdrop-blur-md border border-white/10 text-white transition-all duration-300 ease-in-out hover:scale-105  hover:shadow-xl hover:z-30"
+
             >
             
               <motion.div
@@ -127,7 +136,9 @@ const Testimonial = () => {
                 <div className="flex items-center gap-4 mb-2">
                   <img
                     src={t.image}
-                    className="w-12 h-12 rounded-full object-cover border transition-transform duration-300 border-amber-200 hover:border-amber-400 hover:border-3 hover:scale-120 hover:transition-all  hover:duration-200"
+
+                    className="w-12 h-12 rounded-full object-cover border transition-transform duration-300 border-amber-200 hover:border-amber-400 hover:border-2.5 hover:scale-130 hover:transition-all  hover:duration-300"
+
                     alt={t.name}
                   />
                   <div>

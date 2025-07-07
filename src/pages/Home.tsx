@@ -4,6 +4,8 @@ import logos from "@/data/devLogos.json";
 import { Projects } from "@/layout/components/Projects";
 import Testimonial from "@/layout/components/Testimonials/Testimonial";
 
+import Team from "@/layout/components/Team/Team";
+
 const Home = () => {
   return (
     <main className="w-full h-full flex flex-col relative">
@@ -23,6 +25,9 @@ const Home = () => {
           </div>
           <Projects />
           <Testimonial/>
+
+          <Team/>
+
         </div>
       </div>
     </main>
